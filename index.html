@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <!-- navigation -->
+  <header class="flex">
+    <h2 class="logo">
+      <a href="#home">Logo</a>
+    </h2>
+    <nav class="flex">
+      <ul class="nav-list flex">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button title="Dark Mode" id="dark" class="btn-theme-toggle hide" onclick="toggleTheme('dark')">
+        <i class="icon" data-feather="moon"></i>
+      </button>
+      <button title="Light Mode" id="light" class="btn-theme-toggle show" onclick="toggleTheme('light')">
+        <i class="icon" data-feather="sun"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- content -->
+  <div class="content">
+    <section id="home">
+      <h1 id="greetings">Hello World!</h1>
+      <button class="cta" onclick="greet()">
+        Get to know me
+        <i data-feather="arrow-right"></i>
+      </button>
+    </section>
+
+    <section id="about">
+      <h1 class="content-header">About</h1>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero repellendus enim dolor id cum perspiciatis nam quod suscipit impedit a adipisci culpa voluptates, saepe deleniti architecto explicabo tenetur dolores quisquam nostrum doloribus quia consequatur odio dicta recusandae. Saepe nisi a laborum natus animi maxime, facilis odit suscipit? Possimus explicabo id, distinctio error numquam consequuntur, sed provident voluptate voluptas, perspiciatis voluptatem et tenetur non. Quae laborum molestias est dicta deleniti accusamus sint doloribus totam molestiae distinctio autem sapiente, natus fuga culpa illo facere ea nemo quos veritatis quam perferendis necessitatibus tempore alias aliquid. Ipsum perspiciatis sapiente, animi ipsa nihil in error placeat quasi earum? Facilis quaerat delectus, vel ut maxime quidem placeat soluta fugit consectetur quia, maiores atque necessitatibus minima aspernatur veniam consequatur quo expedita nesciunt perspiciatis eligendi ipsa doloribus praesentium sapiente! Repellendus illum dolorum sint laboriosam tempora accusamus esse unde ipsa molestias ad eius deserunt quisquam, quis autem. Minus dolorem, rem, harum esse, excepturi quidem illum odit eos iure optio nostrum dignissimos dolores praesentium mollitia explicabo. Aspernatur consequatur blanditiis quam veniam consequuntur nostrum numquam tempora, iure modi! Ducimus maxime accusamus, deleniti quod doloribus praesentium. Praesentium optio quibusdam corporis, unde cum cumque neque laudantium officia nam culpa! Aut ratione quisquam quam.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h1 class="content-header">Contact</h1>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, porro veniam, inventore doloremque libero delectus obcaecati saepe repellat facilis eos vel quae neque eveniet blanditiis natus eligendi autem pariatur? Deserunt exercitationem maxime dicta perspiciatis eaque nihil neque ipsum aliquam eos molestias ad recusandae omnis sunt, tenetur beatae consequuntur reiciendis impedit.
+      </p>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

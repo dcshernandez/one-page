@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;800&display=swap');
+
+:root {
+  --primary: #121222;
+  --secondary: #f1f1f1;
+}
+:root.dark{
+  --primary: #f1f1f1;
+  --secondary: #121222;
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+body {
+  width: 80vw;
+  margin: 0 auto;
+  background-color: var(--secondary);
+  color: var(--primary);
+  transition: all 500ms;
+}
+
+header{
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+.logo a{
+  color: var(--primary);
+  margin: 1rem 2rem;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color:var(--primary);
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+  padding: 0.5rem 0;
+}
+
+.nav-list a:hover, a:active {
+  opacity: 1;
+}
+
+.nav-list a::before {
+  transition: 300ms;
+  height: 0.2rem;
+  content: "";
+  position: absolute;
+  background-color:var(--primary);
+  width: 0%;
+  bottom: 0;
+}
+
+.nav-list a:hover::before {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-theme-toggle {
+  background-color: transparent;
+  border: none;
+  color: var(--primary)
+}
+
+.icon {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.hide{
+  display:none;
+}
+  
+.show{
+  display:block;
+}
+
+.content {
+  margin: 1rem;
+}
+
+section {
+  min-height: 100vh;
+}
+
+#greetings, 
+.content-header{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#greetings {
+  font-size: 7rem;
+}
+.content-header {
+  font-size: 6rem;
+}
+
+.cta {
+  background: var(--primary);
+  color: var(--secondary);
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description{
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* media queries */
+@media (min-width : 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width : 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width : 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width : 992px) {
+  html {
+    font-size: 18px;
+  }
+}
